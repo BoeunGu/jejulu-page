@@ -33,39 +33,41 @@
                     <form class="needs-validation was-validated" action="#" method="post">
                       <div class="row g-3">
                         <div class="col-12">
-                          <label for="loginId" class="form-label">ID *</label>
-                          <input type="text" class="form-control" id="loginId" placeholder="ID" value="" required>
-                          <div class="invalid-feedback">
-                            Valid Login ID is required.
-                          </div>
-                        </div>
-            
-                        <div class="col-12">
-                          <label for="password" class="form-label">Password *</label>
-                          <input type="password" class="form-control" id="password" placeholder="PASSWORD" value="" required="">
-                          <div class="invalid-feedback">
-                            Valid Password is required.
-                          </div>
-                        </div>
-                        <div class="col-12">
-                            <label for="check" class="form-label">Password Check*</label>
-                            <input type="password" class="form-control" id="check" placeholder="" value="" required="">
+                            <label for="loginId" class="form-label">ID *</label>
+                            <input type="text" class="form-control" id="loginId" placeholder="ID (4 ~ 20자)" aria-describedby="range-error" required maxlength=20>
                             <div class="invalid-feedback">
-                             Valid Password is required.
+                                valid ID is required.
+                            </div>
+                            <div id="range-error" class="invalid-feedback">
+                                ID 길이는 4~20자 입니다.
                             </div>
                         </div>
-            
+
                         <div class="col-12">
-                          <label for="name" class="form-label">Name</label>
-                          <div class="input-group has-validation">
-                            <span class="input-group-text">@</span>
-                            <input type="text" class="form-control" id="name" placeholder="Host Name" required="">
-                          <div class="invalid-feedback">
+                            <label for="password" class="form-label">Password *</label>
+                            <input type="password" class="form-control" id="password" placeholder="PASSWORD (4 ~ 20자)" required maxlength=20>
+                            <label for="check" class="form-label">Password Check*</label>
+                            <input type="password" class="form-control" id="check" placeholder="PASSWORD CHECK"  aria-describedby="not" required>
+                            <div class="invalid-feedback">
+                                valid PASSWORD,Password Check is required.
+                            </div>
+                            <div class="unchecked-password" style="color: rgb(231, 24, 24);">
+                                비밀번호 확인하세용
+                            </div>
+                            <div class="checked-password" style="color: rgb(83, 194, 83);">
+                                넘어가
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+                        <div class="col-12">
+                          <label for="name" class="form-label">Host Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Host Name" required>
+                            <div class="invalid-feedback">
                               Your Name is required.
                             </div>
-                          </div>
                         </div>
-            
+
                         <div class="col-12">
                           <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
                           <input type="email" class="form-control" id="email" placeholder="you@example.com">
@@ -118,7 +120,7 @@
                         </div>
                       </div>
                       <hr class="my-4">
-                      <button class="w-100 btn btn-primary btn-lg" type="submit">Sign-in</button>
+                      <button id="submit" class="w-100 btn btn-primary btn-lg" type="submit">Sign-in</button>
                     </form>
                 </div>
             </div>
@@ -126,13 +128,25 @@
     </div>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('.checked-password').hide();
+        $('.unchecked-password').hide();
+        $("#check, #password").on("change", () => {
+            let password = $('#password').val();
+            let passwordcheck = $('#check').val();
 
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            if(password === passwordcheck) {
+                $('.unchecked-password').hide();
+                $('.checked-password').show();
+                $('#submit').removeAttr("disabled","disabled");
+            }
+            else {
+                $('.checked-password').hide();
+                $('.unchecked-password').show();
+                $('#submit').attr("disabled","disabled");
+            }
+        });	
+    </script>
 </body>
 </html>
