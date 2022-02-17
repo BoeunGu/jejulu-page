@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 부트 스트랩 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- 부트 스트랩 아이콘 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>HEADER</title>
+</head>
+<style>
+    nav{
+        background-color: rgba(0, 0, 0, 0.061);
+    }
+    .dropdown-menu{
+        border-radius: 20px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .dropdown-item{
+        border-radius: 15px;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: inline;
+        margin-top: 0;
+    }
+    #header{
+        padding-top: 30px;
+    }
+    #serch-bar{
+        width: 250px; 
+        height: 10%;
+        background-color: rgba(0, 0, 0, 0.132);
+    }
+    .card{
+        border: none;
+    }
+    .main-content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    }
+
+    .main-content .main-content-overlay {
+    background: rgba(0, 0, 0, 0.26);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    }
+
+    .main-content:hover .main-content-overlay{
+    opacity: 1;
+    }
+
+    .main-content-image{
+    width: 100%;
+    }
+
+    .main-content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    }
+
+    .main-content:hover .main-content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    }
+
+    .main-content-details h3{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    }
+
+    .main-content-details p{
+    color: #fff;
+    font-size: 0.8em;
+    }
+
+    .fadeIn-bottom{
+    top: 80%;
+    }
+    *, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+    }
+
+    #category-1{
+        background-image:url(../../static/image/category/category1.jpg);
+        background-size: cover;
+        flex-direction: column;
+    }
+    #category-2{
+        background-image: url(../../static/image/category/category2.jpg);
+        background-size: cover;
+        flex-direction: column;
+    }
+    #category-3{
+        background-image: url(../../static/image/category/category3.jpg);
+        background-size: cover;
+        flex-direction: column;
+    }
+</style>
+<body>
+    <!-- 헤더 바디 부분 -->
+    <div class="container" id="header">
+        <div class="mt-5 mb-5 text-center">
+            <header>
+                <h1>
+                    <i class="bi bi-tsunami"></i>
+                    JE JUL U
+                </h1>
+            </header>
+            <br>
+            <i class="bi bi-wind"></i>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+
+        </div>
+    </div>
+    <hr>
+    <div class="container mb-5">
+        <div class="row mt-5">
+            <div class="col-lg-3 col-sm-6 text-center">
+                <button class="btn text-secondary" type="button" onclick="location.href='#'">ABOUT JEJU</button>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center">
+                <button class="btn text-secondary" type="button" onclick="location.href='#'">MAP</button>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center">
+                <button class="btn text-secondary" type="button" onclick="location.href='#'">CATEGORY</button>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center">
+                <button class="btn text-secondary" type="button" onclick="location.href='#'">CONTACT US</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- test -->
+        <!-- 카테고리1 -->
+        <header class="py-5 d-flex justify-content-center" id="category-1">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-border">CTEGORY1</h1>
+                    <p class="lead fw-normal text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </header>
+        <div class="p-3"></div>
+        <div class="container-fluid px-4 px-lg-5 mt-5 mb-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-4 justify-content-center">
+                <!-- th:each 단락 -->
+                <div class="col mb-5">
+                    <div class="card h-100 text-center main-content">
+                        <a href="#">
+                            <div class="main-content-overlay"></div>
+                            <img class="card-img-top shadow main-content-image" src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                            <div class="main-content-details fadeIn-bottom">
+                                <h3>This is a title</h3>
+                                <p>This is a short description</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100 text-center main-content">
+                        <a href="#">
+                            <div class="main-content-overlay"></div>
+                            <img class="card-img-top shadow main-content-image" src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                            <div class="main-content-details fadeIn-bottom">
+                                <h3>This is a title</h3>
+                                <p>This is a short description</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100 text-center main-content">
+                        <a href="#">
+                            <div class="main-content-overlay"></div>
+                            <img class="card-img-top shadow main-content-image" src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                            <div class="main-content-details fadeIn-bottom">
+                                <h3>This is a title</h3>
+                                <p>This is a short description</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100 text-center main-content">
+                        <a href="#">
+                            <div class="main-content-overlay"></div>
+                            <img class="card-img-top shadow main-content-image" src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                            <div class="main-content-details fadeIn-bottom">
+                                <h3>This is a title</h3>
+                                <p>This is a short description</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 카테고리2 -->
+        <header class="py-5 d-flex justify-content-center" id="category-2">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-border">CTEGORY2</h1>
+                    <p class="lead fw-normal text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </header>
+        <div class="p-3"></div>
+
+        <div class="container-fluid px-4 px-lg-5 mt-5 mb-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-4 justify-content-center">
+                <!-- th:each 단락 -->
+                <div class="col mb-5">
+                    <div class="card h-100 text-center main-content">
+                        <a href="#">
+                            <div class="main-content-overlay"></div>
+                            <img class="card-img-top shadow main-content-image" src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                            <div class="main-content-details fadeIn-bottom">
+                                <h3>This is a title</h3>
+                                <p>This is a short description</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100 text-center main-content">
+                        <a href="#">
+                            <div class="main-content-overlay"></div>
+                            <img class="card-img-top shadow main-content-image" src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                            <div class="main-content-details fadeIn-bottom">
+                                <h3>This is a title</h3>
+                                <p>This is a short description</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100 text-center main-content">
+                        <a href="#">
+                            <div class="main-content-overlay"></div>
+                            <img class="card-img-top shadow main-content-image" src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                            <div class="main-content-details fadeIn-bottom">
+                                <h3>This is a title</h3>
+                                <p>This is a short description</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100 text-center main-content">
+                        <a href="#">
+                            <div class="main-content-overlay"></div>
+                            <img class="card-img-top shadow main-content-image" src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                            <div class="main-content-details fadeIn-bottom">
+                                <h3>This is a title</h3>
+                                <p>This is a short description</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 카테고리3 -->
+        <header class="py-5 d-flex justify-content-center" id="category-3">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-border">CTEGORY3</h1>
+                    <p class="lead fw-normal text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </header>
+        <div class="p-3"></div>
+        <div class="container-fluid px-4 px-lg-5 mt-5 mb-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-4 justify-content-center">
+                <!-- th:each 단락 -->
+                <div class="col mb-5">
+                    <div class="card h-100 text-center main-content">
+                        <a href="#">
+                            <div class="main-content-overlay"></div>
+                            <img class="card-img-top shadow main-content-image" src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                            <div class="main-content-details fadeIn-bottom">
+                                <h3>This is a title</h3>
+                                <p>This is a short description</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100 text-center main-content">
+                        <a href="#">
+                            <div class="main-content-overlay"></div>
+                            <img class="card-img-top shadow main-content-image" src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                            <div class="main-content-details fadeIn-bottom">
+                                <h3>This is a title</h3>
+                                <p>This is a short description</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100 text-center main-content">
+                        <a href="#">
+                            <div class="main-content-overlay"></div>
+                            <img class="card-img-top shadow main-content-image" src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                            <div class="main-content-details fadeIn-bottom">
+                                <h3>This is a title</h3>
+                                <p>This is a short description</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100 text-center main-content">
+                        <a href="#">
+                            <div class="main-content-overlay"></div>
+                            <img class="card-img-top shadow main-content-image" src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                            <div class="main-content-details fadeIn-bottom">
+                                <h3>This is a title</h3>
+                                <p>This is a short description</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <div class="container-fluid mt-5">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">
+                        <i class="bi bi-house-door"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">
+                        <i class="bi bi-info-circle"></i>About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">
+                        <i class="bi bi-geo-alt"></i>Map
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">
+                        <i class="bi bi-chat-dots"></i>Contact
+                    </a>
+                </li>
+              </ul>
+              <div class="nav justify-content-center text-center text-decoration-none text-muted">
+                  <a href="/" class="mb-3 me-2 mb-md-0 lh-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-tsunami" viewBox="0 0 16 16">
+                        <path d="M.036 12.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65zm0 2a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65zM2.662 8.08c-.456 1.063-.994 2.098-1.842 2.804a.5.5 0 0 1-.64-.768c.652-.544 1.114-1.384 1.564-2.43.14-.328.281-.68.427-1.044.302-.754.624-1.559 1.01-2.308C3.763 3.2 4.528 2.105 5.7 1.299 6.877.49 8.418 0 10.5 0c1.463 0 2.511.4 3.179 1.058.67.66.893 1.518.819 2.302-.074.771-.441 1.516-1.02 1.965a1.878 1.878 0 0 1-1.904.27c-.65.642-.907 1.679-.71 2.614C11.076 9.215 11.784 10 13 10h2.5a.5.5 0 0 1 0 1H13c-1.784 0-2.826-1.215-3.114-2.585-.232-1.1.005-2.373.758-3.284L10.5 5.06l-.777.388a.5.5 0 0 1-.447 0l-1-.5a.5.5 0 0 1 .447-.894l.777.388.776-.388a.5.5 0 0 1 .447 0l1 .5a.493.493 0 0 1 .034.018c.44.264.81.195 1.108-.036.328-.255.586-.729.637-1.27.05-.529-.1-1.076-.525-1.495-.426-.42-1.19-.77-2.477-.77-1.918 0-3.252.448-4.232 1.123C5.283 2.8 4.61 3.738 4.07 4.79c-.365.71-.655 1.433-.945 2.16-.15.376-.301.753-.463 1.13z"/>
+                      </svg>
+                  </a>
+                  <p>2022 Jejulu, Inc</p>
+              </div>
+            </footer>
+        </div>
+
+
+        
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-expand navbar-light fixed-top shadow-sm pt-0 pb-0">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-tsunami"></i> Jejulu</a>
+            <form class="navbar-form" action="#" method="get">
+                <div class="input-group">
+                   <input type="text" class="form-control rounded-pill" placeholder="search for post" id="serch-bar">
+                   <div class="input-group-btn">
+                      <button type="submit" class="btn btn-default"><i class="bi bi-search"></i></button>
+                   </div>
+                </div>
+            </form>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-person fs-4"></i>
+                    </a>
+                    <div class="dropdown-menu ">
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-key"></i>
+                            로그인
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-person-plus"></i>
+                            회원가입
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
