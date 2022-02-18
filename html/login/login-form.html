@@ -21,7 +21,9 @@
 
     #wrapper {
         background-image: url(../../static/image/category/About_jeju_3.jpg);
-        padding: 100px;
+        padding: 86px;
+        max-width: 1169px;
+        min-height: 900px;
     }
 
 
@@ -206,10 +208,11 @@
 
 <body>
     <div id="wrapper" class="container justify-content-center text-center d-flex">
-        <div class="wrapper">
+        <div class="wrapper py-5">
             <div class="card">
                 <form action="#" class="d-flex flex-column needs-validation was-validated">
                     <div class="h3 text-center text-white">Login</div>
+                    <br>
                     <div class="d-flex align-items-center input-field my-3 mb-4 col-12">
                         <span class="far fa-user p-2"></span>
                         <input type="text" placeholder="Username or Email" required class="form-control" />
@@ -217,6 +220,7 @@
                           The ID is not a valid.
                            </div> -->
                     </div>
+                    
                     <div class="d-flex align-items-center input-field mb-4">
                         <span class="fas fa-lock p-2"></span>
                         <input type="password" placeholder="Password" required class="form-control" id="pwd" />
@@ -225,16 +229,19 @@
                             <span class="fas fa-eye-slash"></span>
                         </button>
                     </div>
+                  
                     
                     <div class="my-3 text-center">
                         
                         <button type="submit" class="btn btn-primary mx-4">Member</button>
                         <button type="submit" class="btn btn-primary mx-4">Host</button>
                     </div>
+                    <br>
                     <div class="mb-3">
                         <span class="text-light-white">Don't have an account?</span>
                         <a href="#">Sign Up</a>
                     </div>
+                    <br>
                 </form>
                 <div class="position-relative border-bottom my-3 line">
                     <span class="connect">or connect with</span>
