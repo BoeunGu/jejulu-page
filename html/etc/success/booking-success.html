@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 부트 스트랩 css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- 부트 스트랩 아이콘 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <style>
+    #bs_main {
+      background-size: cover;
+    }
+    #bs_icon {
+      width: 10%;
+      height: 10%;
+    }
+  </style>
+  <body>
+    <header
+      id="bs_main"
+      class="py-5 bg-image-full"
+      style="
+        background-image: url(../../../static/image/category/About_jeju_7.jpg);
+      "
+    >
+      <div class="text-center my-5">
+        <img
+          id="bs_icon"
+          class="img-fluid rounded-circle mb-4"
+          src="../../../static/image/category/Booking_success.png"
+          alt="..."
+        />
+        <h1 class="text-black fs-1 fw-bolder">Awesome!</h1>
+      </div>
+    </header>
+
+    <section class="py-5 text-center">
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h2>Your booking has been confirmed.</h2>
+            <br />
+            <h3>We'll see you soon!</h3>
+            <p class="lead"></p>
+            <br />
+            <button class="btn btn-secondary btn-lg" type="button">Done</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
