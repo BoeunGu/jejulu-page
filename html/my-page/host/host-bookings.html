@@ -105,12 +105,9 @@
         flex-direction: column;
     }
 
-    /* Slideshow container */
-    /* .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin:0px;
-} */
+    /* 
+    
+
     /* Next & previous buttons */
     .prev,
     .next {
@@ -162,15 +159,15 @@
         background-color: #0f386d;
     }
 
-    /* Fading animation (삭제 가능)
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-} */
+    /* Fading animation (삭제 가능) */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
 
-    @-webkit-keyframes fade {
+    @-webkit-key frames fade {
         from {
             opacity: .4
         }
@@ -206,6 +203,7 @@
         <div class="slideshow-container">
 
             <!-- th:each 단락 -->
+            <!-- mySlides로 묶어준 후 bootstrap스타일 적용 -->
             <div class="mySlides">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
@@ -225,62 +223,63 @@
                             </a>
                         </div>
                     </div>
-                
-                <div class="col mb-5">
-                    <div class="card h-100 text-center main-content">
-                        <a href="#">
-                            <div class="main-content-overlay"></div>
-                            <img class="card-img-top shadow main-content-image"
-                                src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                            <div class="main-content-details fadeIn-bottom">
-                                <h3>Title1-2 : </h3>
-                                <p>Name : </p>
-                                <p>Number : </p>
-                                <p>Date : </p>
-                                <p>Guests : </p>
-                            </div>
-                        </a>
+
+                    <div class="col mb-5">
+                        <div class="card h-100 text-center main-content">
+                            <a href="#">
+                                <div class="main-content-overlay"></div>
+                                <img class="card-img-top shadow main-content-image"
+                                    src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                                <div class="main-content-details fadeIn-bottom">
+                                    <h3>Title1-2 : </h3>
+                                    <p>Name : </p>
+                                    <p>Number : </p>
+                                    <p>Date : </p>
+                                    <p>Guests : </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100 text-center main-content">
-                        <a href="#">
-                            <div class="main-content-overlay"></div>
-                            <img class="card-img-top shadow main-content-image"
-                                src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                            <div class="main-content-details fadeIn-bottom">
-                                <h3>Title1-3 : </h3>
-                                <p>Name : </p>
-                                <p>Number : </p>
-                                <p>Date : </p>
-                                <p>Guests : </p>
-                            </div>
-                        </a>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-center main-content">
+                            <a href="#">
+                                <div class="main-content-overlay"></div>
+                                <img class="card-img-top shadow main-content-image"
+                                    src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                                <div class="main-content-details fadeIn-bottom">
+                                    <h3>Title1-3 : </h3>
+                                    <p>Name : </p>
+                                    <p>Number : </p>
+                                    <p>Date : </p>
+                                    <p>Guests : </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100 text-center main-content">
-                        <a href="#">
-                            <div class="main-content-overlay"></div>
-                            <img class="card-img-top shadow main-content-image"
-                                src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                            <div class="main-content-details fadeIn-bottom">
-                                <h3>Title1-4 : </h3>
-                                <p>Name : </p>
-                                <p>Number : </p>
-                                <p>Date : </p>
-                                <p>Guests : </p>
-                            </div>
-                        </a>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-center main-content">
+                            <a href="#">
+                                <div class="main-content-overlay"></div>
+                                <img class="card-img-top shadow main-content-image"
+                                    src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                                <div class="main-content-details fadeIn-bottom">
+                                    <h3>Title1-4 : </h3>
+                                    <p>Name : </p>
+                                    <p>Number : </p>
+                                    <p>Date : </p>
+                                    <p>Guests : </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
             <!-- th:each 단락 -->
-            <div class="mySlides">
+            <!-- mySlides로 묶어준 후 bootstrap스타일 적용 -->
+            <div class="mySlides"> 
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
                         <div class="card h-100 text-center main-content">
@@ -299,61 +298,62 @@
                             </a>
                         </div>
                     </div>
-                
-                <div class="col mb-5">
-                    <div class="card h-100 text-center main-content">
-                        <a href="#">
-                            <div class="main-content-overlay"></div>
-                            <img class="card-img-top shadow main-content-image"
-                                src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                            <div class="main-content-details fadeIn-bottom">
-                                <h3>Title2-2 : </h3>
-                                <p>Name : </p>
-                                <p>Number : </p>
-                                <p>Date : </p>
-                                <p>Guests : </p>
-                            </div>
-                        </a>
+
+                    <div class="col mb-5">
+                        <div class="card h-100 text-center main-content">
+                            <a href="#">
+                                <div class="main-content-overlay"></div>
+                                <img class="card-img-top shadow main-content-image"
+                                    src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                                <div class="main-content-details fadeIn-bottom">
+                                    <h3>Title2-2 : </h3>
+                                    <p>Name : </p>
+                                    <p>Number : </p>
+                                    <p>Date : </p>
+                                    <p>Guests : </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100 text-center main-content">
-                        <a href="#">
-                            <div class="main-content-overlay"></div>
-                            <img class="card-img-top shadow main-content-image"
-                                src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                            <div class="main-content-details fadeIn-bottom">
-                                <h3>Title2-3 : </h3>
-                                <p>Name : </p>
-                                <p>Number : </p>
-                                <p>Date : </p>
-                                <p>Guests : </p>
-                            </div>
-                        </a>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-center main-content">
+                            <a href="#">
+                                <div class="main-content-overlay"></div>
+                                <img class="card-img-top shadow main-content-image"
+                                    src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                                <div class="main-content-details fadeIn-bottom">
+                                    <h3>Title2-3 : </h3>
+                                    <p>Name : </p>
+                                    <p>Number : </p>
+                                    <p>Date : </p>
+                                    <p>Guests : </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100 text-center main-content">
-                        <a href="#">
-                            <div class="main-content-overlay"></div>
-                            <img class="card-img-top shadow main-content-image"
-                                src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                            <div class="main-content-details fadeIn-bottom">
-                                <h3>Title2-4 : </h3>
-                                <p>Name : </p>
-                                <p>Number : </p>
-                                <p>Date : </p>
-                                <p>Guests : </p>
-                            </div>
-                        </a>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-center main-content">
+                            <a href="#">
+                                <div class="main-content-overlay"></div>
+                                <img class="card-img-top shadow main-content-image"
+                                    src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                                <div class="main-content-details fadeIn-bottom">
+                                    <h3>Title2-4 : </h3>
+                                    <p>Name : </p>
+                                    <p>Number : </p>
+                                    <p>Date : </p>
+                                    <p>Guests : </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
             <!-- th:each 단락 -->
+            <!-- mySlides로 묶어준 후 bootstrap스타일 적용 -->
             <div class="mySlides">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
@@ -373,61 +373,62 @@
                             </a>
                         </div>
                     </div>
-                
-                <div class="col mb-5">
-                    <div class="card h-100 text-center main-content">
-                        <a href="#">
-                            <div class="main-content-overlay"></div>
-                            <img class="card-img-top shadow main-content-image"
-                                src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                            <div class="main-content-details fadeIn-bottom">
-                                <h3>Title3-2 : </h3>
-                                <p>Name : </p>
-                                <p>Number : </p>
-                                <p>Date : </p>
-                                <p>Guests : </p>
-                            </div>
-                        </a>
+
+                    <div class="col mb-5">
+                        <div class="card h-100 text-center main-content">
+                            <a href="#">
+                                <div class="main-content-overlay"></div>
+                                <img class="card-img-top shadow main-content-image"
+                                    src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                                <div class="main-content-details fadeIn-bottom">
+                                    <h3>Title3-2 : </h3>
+                                    <p>Name : </p>
+                                    <p>Number : </p>
+                                    <p>Date : </p>
+                                    <p>Guests : </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100 text-center main-content">
-                        <a href="#">
-                            <div class="main-content-overlay"></div>
-                            <img class="card-img-top shadow main-content-image"
-                                src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                            <div class="main-content-details fadeIn-bottom">
-                                <h3>Title3-3 : </h3>
-                                <p>Name : </p>
-                                <p>Number : </p>
-                                <p>Date : </p>
-                                <p>Guests : </p>
-                            </div>
-                        </a>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-center main-content">
+                            <a href="#">
+                                <div class="main-content-overlay"></div>
+                                <img class="card-img-top shadow main-content-image"
+                                    src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                                <div class="main-content-details fadeIn-bottom">
+                                    <h3>Title3-3 : </h3>
+                                    <p>Name : </p>
+                                    <p>Number : </p>
+                                    <p>Date : </p>
+                                    <p>Guests : </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100 text-center main-content">
-                        <a href="#">
-                            <div class="main-content-overlay"></div>
-                            <img class="card-img-top shadow main-content-image"
-                                src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                            <div class="main-content-details fadeIn-bottom">
-                                <h3>Title3-4 : </h3>
-                                <p>Name : </p>
-                                <p>Number : </p>
-                                <p>Date : </p>
-                                <p>Guests : </p>
-                            </div>
-                        </a>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-center main-content">
+                            <a href="#">
+                                <div class="main-content-overlay"></div>
+                                <img class="card-img-top shadow main-content-image"
+                                    src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                                <div class="main-content-details fadeIn-bottom">
+                                    <h3>Title3-4 : </h3>
+                                    <p>Name : </p>
+                                    <p>Number : </p>
+                                    <p>Date : </p>
+                                    <p>Guests : </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
             <!-- th:each 단락 -->
+            <!-- mySlides로 묶어준 후 bootstrap스타일 적용 -->
             <div class="mySlides">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
@@ -447,60 +448,60 @@
                             </a>
                         </div>
                     </div>
-                
-                <div class="col mb-5">
-                    <div class="card h-100 text-center main-content">
-                        <a href="#">
-                            <div class="main-content-overlay"></div>
-                            <img class="card-img-top shadow main-content-image"
-                                src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                            <div class="main-content-details fadeIn-bottom">
-                                <h3>Title4-2 : </h3>
-                                <p>Name : </p>
-                                <p>Number : </p>
-                                <p>Date : </p>
-                                <p>Guests : </p>
-                            </div>
-                        </a>
+
+                    <div class="col mb-5">
+                        <div class="card h-100 text-center main-content">
+                            <a href="#">
+                                <div class="main-content-overlay"></div>
+                                <img class="card-img-top shadow main-content-image"
+                                    src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                                <div class="main-content-details fadeIn-bottom">
+                                    <h3>Title4-2 : </h3>
+                                    <p>Name : </p>
+                                    <p>Number : </p>
+                                    <p>Date : </p>
+                                    <p>Guests : </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100 text-center main-content">
-                        <a href="#">
-                            <div class="main-content-overlay"></div>
-                            <img class="card-img-top shadow main-content-image"
-                                src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                            <div class="main-content-details fadeIn-bottom">
-                                <h3>Title4-3 : </h3>
-                                <p>Name : </p>
-                                <p>Number : </p>
-                                <p>Date : </p>
-                                <p>Guests : </p>
-                            </div>
-                        </a>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-center main-content">
+                            <a href="#">
+                                <div class="main-content-overlay"></div>
+                                <img class="card-img-top shadow main-content-image"
+                                    src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                                <div class="main-content-details fadeIn-bottom">
+                                    <h3>Title4-3 : </h3>
+                                    <p>Name : </p>
+                                    <p>Number : </p>
+                                    <p>Date : </p>
+                                    <p>Guests : </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100 text-center main-content">
-                        <a href="#">
-                            <div class="main-content-overlay"></div>
-                            <img class="card-img-top shadow main-content-image"
-                                src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                            <div class="main-content-details fadeIn-bottom">
-                                <h3>Title4-4 : </h3>
-                                <p>Name : </p>
-                                <p>Number : </p>
-                                <p>Date : </p>
-                                <p>Guests : </p>
-                            </div>
-                        </a>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-center main-content">
+                            <a href="#">
+                                <div class="main-content-overlay"></div>
+                                <img class="card-img-top shadow main-content-image"
+                                    src="https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                                <div class="main-content-details fadeIn-bottom">
+                                    <h3>Title4-4 : </h3>
+                                    <p>Name : </p>
+                                    <p>Number : </p>
+                                    <p>Date : </p>
+                                    <p>Guests : </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
         </div>
         <!-- Next and previous buttons -->
@@ -530,7 +531,7 @@
 
 
         var slideIndex = 1;
-        showSlides(slideIndex);
+        showSlides(slideIndex); // 제일 처음 화면에서 첫번째 mySlides가 보임
 
         // Next/previous controls
         function plusSlides(n) {
@@ -547,15 +548,15 @@
             var slides = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("dot");
             if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
+            if (n < 1) { slideIndex = slides.length } // btn1에서 prev버튼을 누른경우 btn마지막으로 이동
             for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+                slides[i].style.display = "none"; // 먼저 모든 mySlide를 비활성화 시킴
             }
             for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+                dots[i].className = dots[i].className.replace(" active", ""); // 먼저 모든 버튼을 비활성화시킴
             }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
+            slides[slideIndex - 1].style.display = "block"; //클릭한 btn의 mySlide만 활성화 시킴
+            dots[slideIndex - 1].className += " active"; // 클릭한 btn을 활성화 시킴(색상변경)
         }
         function createDot(listFromServer) {
 
