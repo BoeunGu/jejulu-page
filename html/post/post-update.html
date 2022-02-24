@@ -19,13 +19,10 @@
     <title>Document</title>
 </head>
 <style>
-  /* body {
-    background-color: #eee
-} */
+
 .card {
-    position:relative;
-    /* display: flex; */
-    /* justify-content: center; */
+    /* position:relative; */
+   
     flex-direction: column;
     min-width: 0;
     max-width: 700px;
@@ -160,25 +157,25 @@ textarea.form-control {
     background-size: 55px 55px
 }
 </style>
-<body>
-    <form action="#" method="post">
-  <div class="container card-0 my-5">
-    <div class="card-body px-sm-4 px-0">
+<body >
+    <form action="#" method="post" enctype="multipart/form-data">
+  <div class="container card-0 my-5 ">
+    <div class="card-body px-sm-4 px-0 ">
         <div class="row justify-content-center mb-5">
             <div class="col-md-10 col">
-                <h1 class="font-weight-bold ml-md-0 mx-auto text-center text-sm-left"> Updating Your Business! </h1>
+                <h1 class="font-weight-bold ml-md-0 mx-auto text-center text-sm-left"> Update Your Business! </h1>
                 
             </div>
         </div>
-        <div class="row justify-content-center round">
-            <div class="col-lg-10 col-md-12">
+        <div class="row justify-content-center round ">
+            <div class="col-lg-10 col-md-12 ">
                 <div class="card shadow-lg card-1" style="margin: 0 auto;">
                     <div class="card-body inner-card">
                         <div class="row justify-content-center">
                             <div class="col-md-12 col-lg-10 col-12">
-                                <div class="form-group"><label for="first-name">First Name</label><input type="text" class="form-control" id="first-name" placeholder="Type your Name"> </div>
+                                <div class="form-group"><label for="first-name">Your Name</label><input type="text" class="form-control" id="first-name" placeholder="Type your Name" name="hostname"> </div>
                                 
-                                <div class="form-group"> <label for="inputEmail4" placeholder="">Project Type</label> <select class="form-control">
+                                <div class="form-group"> <label for="inputEmail4" placeholder="">Type</label> <select name="type" class="form-control">
                                         <option>Tour</option>
                                         <option>Restaurant</option>
                                         <option>Hostel</option>
@@ -189,14 +186,14 @@ textarea.form-control {
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-md-12 col-lg-10 col-12">
-                                <div class="form-group files"><label class="my-auto">Upload Your File </label> <input id="file" type="file" class="form-control" /></div>
+                                <div class="form-group files"><label class="my-auto">Upload Your File </label> <input accept="image/png, image.jpeg" name="file" id="file" type="file" class="form-control" /></div>
                             </div>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-md-12 col-lg-10 col-12">
-                                <div class="form-group"> <label for="exampleFormControlTextarea2">Message</label> <textarea class="form-control rounded-0 " id="exampleFormControlTextarea2" rows="5"></textarea></div>
+                                <div class="form-group"> <label for="exampleFormControlTextarea2">Message</label> <input name="message" class="form-control rounded-0 " id="exampleFormControlTextarea2" rows="5" style="min-height: 130px;"></input></div>
                                 <div class="mb-2 mt-4">
-                                    <div class="text-right "><button type="button" class="btn btn-primary btn-block"><small class="font-weight-bold">Posting</small></button> </div>
+                                    <div class="text-right "><button type="submit" class="btn btn-primary btn-block"><small class="font-weight-bold">Posting</small></button> </div>
                                 </div>
                             </div>
                         </div>
